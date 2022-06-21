@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="1200" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllAppointmentsController">
+   <children>
+      <StackPane layoutX="67.0" layoutY="67.0" prefHeight="513.0" prefWidth="1079.0">
+          <children>
+              <TableView fx:id="Table" prefHeight="438.0" prefWidth="697.0">
+                  <columns>
+                      <TableColumn fx:id="id" prefWidth="36.200013160705566" text="ID" />
+                      <TableColumn fx:id="title" prefWidth="73.39995956420898" text="Title" />
+                      <TableColumn fx:id="contact" minWidth="0.0" prefWidth="67.60003662109375" text="Contact" />
+                      <TableColumn fx:id="type" prefWidth="71.39996337890625" text="Type" />
+                      <TableColumn fx:id="customer" prefWidth="76.79998779296875" text="Customer_ID" />
+                      <TableColumn fx:id="user" prefWidth="57.5999755859375" text="User_ID" />
+                      <TableColumn fx:id="start" prefWidth="90.60009765625" text="Start" />
+                      <TableColumn fx:id="end" prefWidth="81.0" text="End" />
+                      <TableColumn fx:id="location" prefWidth="176.2000732421875" text="Location" />
+                      <TableColumn fx:id="description" prefWidth="187.7999267578125" text="Description" />
+                      <TableColumn fx:id="startDate" prefWidth="157.60003662109375" text="Date" />
+                  </columns>
+              </TableView>
+          </children></StackPane>
+      <Button layoutX="1115.0" layoutY="26.0" mnemonicParsing="false" onAction="#onHome" text="Home" />
+      <Button layoutX="120.0" layoutY="26.0" mnemonicParsing="false" onAction="#onDelete" text="Delete" />
+      <Button layoutX="67.0" layoutY="26.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+      <Label layoutX="471.0" layoutY="21.0" text="All Appointments">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

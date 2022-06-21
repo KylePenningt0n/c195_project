@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="1200" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <children>
+      <ComboBox fx:id="months" layoutX="14.0" layoutY="126.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Reports">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="98.0" text="Month" />
+      <Label layoutX="75.0" layoutY="170.0" text="Year" />
+      <ComboBox fx:id="years" layoutX="14.0" layoutY="200.0" prefWidth="150.0" />
+      <Label layoutX="75.0" layoutY="241.0" text="Type" />
+      <ComboBox fx:id="types" layoutX="14.0" layoutY="274.0" prefWidth="150.0" />
+      <Button layoutX="6.0" layoutY="324.0" mnemonicParsing="false" onAction="#onNumber" text="Get Number of Appointments" />
+      <StackPane layoutX="216.0" layoutY="91.0" prefHeight="486.0" prefWidth="778.0">
+         <children>
+            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="title" prefWidth="75.0" text="Title" />
+                  <TableColumn fx:id="type" prefWidth="75.0" text="Type" />
+                  <TableColumn fx:id="description" prefWidth="75.0" text="Description" />
+                  <TableColumn fx:id="startDate" prefWidth="104.20001220703125" text="Start Date" />
+                  <TableColumn fx:id="startTime" prefWidth="89.4000244140625" text="Start Time" />
+                  <TableColumn fx:id="endTime" prefWidth="137.0" text="End Time" />
+                  <TableColumn fx:id="customerID" prefWidth="147.199951171875" text="customerID" />
+              </columns>
+            </TableView>
+         </children>
+      </StackPane>
+      <ComboBox fx:id="contactBox" layoutX="844.0" layoutY="57.0" onAction="#onContact" prefWidth="150.0" promptText="Choose a contact" />
+      <Button layoutX="1108.0" layoutY="14.0" mnemonicParsing="false" onAction="#onHome" text="Home Screen" />
+      <Label fx:id="appointmentNumber" layoutX="84.0" layoutY="372.0" text="0" />
+      <Button layoutX="216.0" layoutY="44.0" mnemonicParsing="false" onAction="#onTotal" text="Total # of customers" />
+      <Label fx:id="totalCustomers" layoutX="354.0" layoutY="48.0" text="0" />
+   </children>
+</AnchorPane>
